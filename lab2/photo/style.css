@@ -1,0 +1,133 @@
+:root{
+    --color-blue:#31c9dd;
+    --color-green: #94c258;
+    --color-white: #ddd;
+    --color-red: #ec4747;
+}
+
+.cl-blue{
+    color: var(--color-blue);
+}
+.cl-green{
+    color: var(--color-green);
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Body */
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #fcfcfc;
+    background: #355664;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: forte, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 10px 0 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 15px;
+    text-align: center;
+    border-bottom: 3px solid #416371;
+    padding-bottom: 20px;
+}
+
+h3 {
+    text-align: right;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 20px;
+    padding-bottom: 5px;
+    
+}
+
+/* Images */
+/* Image styling */
+img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+}
+
+
+/* Article content */
+.article-content {
+    margin: 15px 0;
+}
+
+
+/* Navigation */
+nav {
+    background: #355664;
+    padding: 0 5px;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+/* Hyperlinks */
+nav a {
+    color: #ffffff;
+    margin: 5px 2px;
+    padding: 7px 10px 4px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--color-red);
+}
+
+/* Article */
+article {
+    height: 390px;
+    background: #213E4A;
+    padding: 20px;
+    margin: 0 0 10px;
+}
+
+/* Figure */
+figure {
+    border: 3px solid #142830;
+    float: right;
+    height: 250px;
+    width: 500px;
+    margin-left: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Footer */
+footer {
+    border-top: 3px solid #142830;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+}
