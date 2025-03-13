@@ -1,0 +1,66 @@
+/* Body */
+body {
+    font-family: Lato, sans-serif;
+    background: url(images/plan-page.jpg);
+    font-size: 16px;
+    width: 1180px;
+    margin: 0 auto; /* Căn giữa container */
+}
+
+/* Section */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Article */
+article {
+    background: #262626;
+    display: inline-block;
+    margin: 80px 20px 0 20px;
+    border: 5px solid #424242;
+    color: #a1a1a1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Article h1 */
+article h1 {
+    font-size: 1.5em;
+    color: #FFF;
+}
+
+/* Price Paragraph */
+p.price {
+    font-size: 3em;
+    font-weight: bold;
+    color: #27dcc4;
+}
+
+/* Unordered List */
+ul {
+    padding: 0;
+}
+
+/* List Items */
+li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+/* Button */
+button {
+    background: #27dcc4;
+    color: #FFF;
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+}
+
+/* Button Hover */
+button:hover {
+    background: #ACACAC;
+}
