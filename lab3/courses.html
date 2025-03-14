@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Table</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+
+    <h1>Courses</h1>
+
+    <table>
+        <tr>
+            <th>Course number</th>
+            <th>Course title</th>
+            <th>Semester taken</th>
+        </tr>
+        <tr class="category">
+            <td colspan="3">For credit</td>
+        </tr>
+        <tr>
+            <td>6.1223</td>
+            <td>Operating system</td>
+            <td>Spring 19</td>
+        </tr>
+        <tr>
+            <td>5.9480</td>
+            <td>Artificial intelligence</td>
+            <td>Fall 19</td>
+        </tr>
+        <tr>
+            <td>7.0879</td>
+            <td>Data mining</td>
+            <td>Fall 19</td>
+        </tr>
+        <tr class="category">
+            <td colspan="3">For listener</td>
+        </tr>
+        <tr>
+            <td>8.0383</td>
+            <td>Database</td>
+            <td>Fall 19</td>
+        </tr>
+        <tr>
+            <td>6.0393</td>
+            <td>Java programming</td>
+            <td>Spring 19</td>
+        </tr>
+    </table>
+
+    <h1>Submit information</h1>
+
+    <form id="myForm">
+        <label>Full name:</label>
+        <input type="text" name="fullname" id="name" required>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobby" value="music"> Music
+        <input type="checkbox" name="hobby" value="games"> Games
+        <input type="checkbox" name="hobby" value="movies"> Movies
+
+        <label>Date of birth:</label>
+        <input type="date" name="dob" id="dob">
+
+        <label>Country:</label>
+        <select name="country" id="country">
+            <option value="hanoi">Hanoi</option>
+            <option value="hochiminh">Ho Chi Minh</option>
+            <option value="danang">Da Nang</option>
+        </select>
+
+        <label>Picture:</label>
+        <input type="file" name="picture">
+
+        <label>Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" id="password" required>
+
+        <label>Favorite words:</label>
+        <textarea name="favorite_words" rows="3"></textarea>
+
+        <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+<script src="courses.js"></script>
+</body>
+</html>
