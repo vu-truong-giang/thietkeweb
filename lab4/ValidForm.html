@@ -3,12 +3,13 @@
 <html>
 <head>
 	<title>Valid form</title>
-	<script src="ValidForm.js">
+	
 		
 	</script>
 	</head>
 	<body>
-		<form name="frmAccount" action="abc.jsp">
+		<form name="frmAccount"  method="GET" onsubmit="return validform(this);">
+
 			fullname:
 			<input type="text" name="fullname"/><br>
 			age:
@@ -19,8 +20,10 @@
 			phone:
 			<input type="text" name="phone"/><br>
 			
-			<input type="button" value="Submit" onclick="validform(document.forms.frmAccount);">
+			<input type="submit" value="Submit">
 
 		</form>
+	<script src="ValidForm.js"></script>
+
 	</body>
 	</html>

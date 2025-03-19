@@ -1,77 +1,29 @@
-function checknull(txt)
-{
-	if(txt.value.length==0)
-		return true;
-	else
+function vaildform(form){
+	let fullname = form.fullname.value.trim();
+	let age = form.age.value.trim();
+	let phone = form.phone.value.trim();
+	let gender = form.gender.value;
+
+
+	if(fullname === ""){
+		alert("Nhập fullname!");
 		return false;
-}
+	} 
 
-function validform(f)
-{
-	
-	if(checknull(f.fullname))
-	{
-		alert(f.fullname.name + " must be not null");
-		f.fullname.focus();
-		return;
+	if(age === "" || isNaN(age) || age < 0){
+		alert("Nhập age lại!")
+		return false
 	}
-	if(checknull(f.age))
-	{
-		alert(f.age.name + " must be not null");
-		f.age.focus();
-		return;
-	}
-	if(isNaN(f.age.value))
-	{
-		alert(f.age.name + " must be a number");
-		f.age.value="";
-		f.age.focus();
-		return;
-	}
-	if(!isInteger(f.age))
-	{
-		alert(f.age.name + " must be an integer number");
-		f.age.value="";
-		f.age.focus();
-		return;
-	}
-	if(eval(f.age.value)<=0 || eval(f.age.value)>=200)
-	{
-		alert(f.age.name + " must be in (0-200)");
-		f.age.value="";
-		f.age.focus();
-		return;
-	}
-	if(notCheck(f.gender))
-	{
-		alert("gender must be choosen")
-		return;
-	}
-	if(!StringMatch(f.phone, /^\(\d{2,4}\)[\s.-]\d{3}[\s.-]\d{3}$/))
-	{
-		alert("not valid")
-		return;
-	}
-}
-function StringMatch(txt, reg)
-{
-	return reg.test(txt.value);	
-}
-function notCheck(radio)
-{
-	var rt=true;
-	for(i=0; i<radio.length; i++)
-		if(radio[i].checked)
-			rt=false;
-	return rt;
-}
-function isInteger(txt)
-{
-	
-	if((!isNaN(txt.value)) && (parseInt(txt.value)===Number(txt.value)))
-		return true;
-	else
-		return false;
-}
 
+	if(!gender){
+		alert("chọn gender!")
+		return false
+	}
 
+	let phonePattern = /^\(\d{4}\)[ .-]\d{3}[ .-]\d{3}$/;
+	if(!phonePattern.test(phone)){
+		alert("Nhap laij sdt dang (0999) 999 999 hoặc (0999)-999-999")
+		return false
+	}
+	return true
+}
