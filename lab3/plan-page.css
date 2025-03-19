@@ -12,6 +12,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* Article */
@@ -19,7 +20,7 @@ article {
     height: 80%;
     background: #262626;
     display: inline-block;
-    margin: 30px 20px 0 20px;
+    margin: 30px 20px 30px 20px;
     border: 5px solid #424242;
     color: #a1a1a1;
     padding: 20px;
