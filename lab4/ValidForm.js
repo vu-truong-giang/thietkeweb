@@ -1,4 +1,4 @@
-function vaildform(form){
+function validform(form){
 	let fullname = form.fullname.value.trim();
 	let age = form.age.value.trim();
 	let phone = form.phone.value.trim();
